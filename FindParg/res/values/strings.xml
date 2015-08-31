@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LightPos</string>
+    <string name="app_name">车位demo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="checkstand_page_title">收银</string>
-    <string name="memberlogin_page_title">会员支付核销</string>
-    <string name="paysuccess_page_title">支付成功</string>
-    <string name="one">1</string>
-    <string name="two">2</string>
-    <string name="three">3</string>
-    <string name="four">4</string>
-    <string name="five">5</string>
-    <string name="six">6</string>
-    <string name="seven">7</string>
-    <string name="eight">8</string>
-    <string name="night">9</string>
-    <string name="zero">0</string>
-    <string name="point">.</string>
-    <string name="timestr">2015-09-10 09:30\n 至 2015-09-10 17:30</string>
-
-    <!-- 退货 -->
-    <string name="noticket">无票</string>
-    <string name="refund">退款</string>
-    <string name="order">订单详情</string>
-    
     <!-- 二维码扫描 -->
     <string name="scanner_title">二维码扫描</string>
     <string name="scanner_text">将二维码放入框内，即可自动扫描</string>
-    
-    <!-- 核销 -->
-    <string name="coupon_redeem">核销</string>
     
 </resources>
