@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.example.findparg.widget.wheel;
+package com.example.findpark.widget.wheel;
 
 public interface WheelAdapter {
 	/**

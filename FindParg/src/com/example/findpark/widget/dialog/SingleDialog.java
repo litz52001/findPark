@@ -1,7 +1,5 @@
-package com.example.findparg.widget.dialog;
+package com.example.findpark.widget.dialog;
 
-
-import com.example.findparg.R;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -14,6 +12,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.findpark.R;
 
 /**
  * @description:单选按钮弹出框

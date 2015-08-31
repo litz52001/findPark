@@ -1,4 +1,4 @@
-package com.example.findparg.widget.wheel;
+package com.example.findpark.widget.wheel;
 
 /*
  * To change this template, choose Tools | Templates
@@ -13,8 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.findparg.R;
-import com.example.findparg.common.tool.ComMethod;
+import com.example.findpark.R;
+import com.example.findpark.common.tool.ComMethod;
 
 /**
  * @author super

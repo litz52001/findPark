@@ -17,7 +17,7 @@
  *  limitations under the License.
  */
 
-package com.example.findparg.widget.wheel;
+package com.example.findpark.widget.wheel;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -45,7 +45,7 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.Scroller;
 
-import com.example.findparg.R;
+import com.example.findpark.R;
 
 /**
  * Numeric wheel view.

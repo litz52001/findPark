@@ -1,4 +1,4 @@
-package com.example.findparg.widget.dialog;
+package com.example.findpark.widget.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -11,11 +11,11 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.example.findparg.R;
-import com.example.findparg.common.tool.ComMethod;
-import com.example.findparg.common.tool.DeviceAttribute;
-import com.example.findparg.widget.wheel.DateTimeDialog;
-import com.example.findparg.widget.wheel.DateTimeDialog.OnChosenListener;
+import com.example.findpark.R;
+import com.example.findpark.common.tool.ComMethod;
+import com.example.findpark.common.tool.DeviceAttribute;
+import com.example.findpark.widget.wheel.DateTimeDialog;
+import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
 
 /**
  * 时间设置弹出框

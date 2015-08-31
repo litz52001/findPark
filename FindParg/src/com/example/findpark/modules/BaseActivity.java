@@ -1,12 +1,8 @@
-package com.example.findparg.modules;
+package com.example.findpark.modules;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.example.findparg.R;
-import com.example.findparg.widget.dialog.CommonProgressDialog;
-import com.example.findparg.widget.dialog.SingleDialog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,6 +19,10 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.findpark.R;
+import com.example.findpark.widget.dialog.CommonProgressDialog;
+import com.example.findpark.widget.dialog.SingleDialog;
 
 /**
  * 基础activity类

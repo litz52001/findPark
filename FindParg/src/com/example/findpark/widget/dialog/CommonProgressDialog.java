@@ -1,4 +1,4 @@
-package com.example.findparg.widget.dialog;
+package com.example.findpark.widget.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.findparg.R;
+import com.example.findpark.R;
 
 
 /**
