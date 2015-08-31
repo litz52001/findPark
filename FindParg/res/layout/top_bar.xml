@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#08a6db" >
+
+        <ImageView
+            android:id="@+id/left_img"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/icon_fanhui_default"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="BAT终端"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:id="@+id/right_ly"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <TextView
+                android:id="@+id/right_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/center_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/right_ly"
+            android:layout_toRightOf="@id/left_img"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/center_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:scaleType="center"
+                android:src="@drawable/imgbtn_shanchu_selector" />
+
+            <EditText
+                android:id="@+id/center_edit"
+                style="@style/edit_line_style"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/center_clear"
+                android:drawableLeft="@drawable/icon_sousuo_default"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="请输入订单号"
+                android:textColor="@color/gffffff"
+                android:maxLength="20"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/line_white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/row_com_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:scaleType="center"
+            android:src="@drawable/img_sousuo" />
+
+        <TextView
+            style="@style/text_com_style"
+            android:text="搜索:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txt_search"
+            style="@style/text_com_style"
+            android:text=""
+            android:textColor="@color/g2981fd"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25dp" >
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/dialog_progress_circle" 
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/dialog_text"
+        style="@style/text_b_com_style"
+        android:text="数据加载中..." />
+
+</LinearLayout>

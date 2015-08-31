@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 黑色 -->
+    <color name="g000000">#000000</color>
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="gffffff">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <!-- 通用蓝色 -->
+    <color name="g08a6db">#08a6db</color>
+    <color name="blue">#08a6db</color>
+    <color name="titlebg">#08a6db</color>
+    <!-- 底部白色背景 -->
+    <color name="gededf7">#ededf7</color>
+    <color name="bgcolor">#ededf7</color>
+    
+    <!-- 灰色文字 -->
+    <color name="g7c7c7c">#7c7c7c</color>
+    <color name="g7f7f7f">#7f7f7f</color>
+    
+    <!-- 优惠券 item 背景 灰色 -->
+    <color name="gc7c7c7">#c7c7c7</color>
+    
+    <!-- 键盘点击背景 -->
+    <color name="gb6b6b6">#b6b6b6</color>
+
+    <!-- 导航页面收银按钮默认色 土黄 -->
+    <color name="gff9000">#ff9000</color>
+    <!-- 导航页面收银按钮点击色 -->
+    <color name="gc5c5c5">#c5c5c5</color>
+    <color name="gcacaca">#cacaca</color>
+    <color name="g696969">#696969</color>
+
+    <!-- 导航页面核销按钮默认色 浅蓝 -->
+    <color name="g10ccff">#10ccff</color>
+
+    <!-- 导航页面统计按钮默认色 深蓝 -->
+    <color name="g2981fd">#2981fd</color>
+
+    <!-- 导航页面退款按钮默认色 深蓝 -->
+    <color name="g0a58c1">#0a58c1</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 灰色 -->
+    <color name="ga0a0a0">#a0a0a0</color>
+    <!-- 深灰色 -->
+    <color name="g666666">#666666</color>
+    <!-- 深红色 -->
+    <color name="g981c10">#981c10</color>
+    <!-- 通用红色 -->
+    <color name="ge74c3c">#e74c3c</color>
+    <!-- 点击红色 -->
+    <color name="gcf4436">#cf4436</color>
+    <!-- 线条颜色 -->
+    <color name="gcccccc">#dddddd</color>
+    <!-- 背景颜色 -->
+    <color name="gdfdfe9">#dfdfe9</color>
+    <!-- 点击蓝色 -->
+    <color name="g0795c5">#0795c5</color>
+    <!-- 点击前灰色 -->
+    <color name="gafb0c0">#eaeaf6</color>
+    <!-- 点击灰色 -->
+    <color name="g9d9eac">#9d9eac</color>
+    <!-- 文字灰色 -->
+    <color name="g999999">#999999</color>
+    <!-- 键盘灰色背景 -->
+    <color name="gd5d5de">#d5d5de</color>
+    <!-- 透明背景 -->
+    <color name="transbg">#66000000</color>
+    <!-- item 分割线 -->
+    <color name="gd9d9d9">#d9d9d9</color>
+
+    <!-- 红色 -->
+    <color name="red">#ff0000</color>
+    
+    <!-- 核销 二维码背景 -->
+    <color name="g333333">#333333</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    
+    <color name="g6b6b6b">#6b6b6b</color>
+
+</resources>

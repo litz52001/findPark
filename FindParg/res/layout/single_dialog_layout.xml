@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_warning" />
+
+        <TextView
+            android:id="@+id/dialog_title_text"
+            style="@style/text_m_com_style"
+            android:layout_marginLeft="8dp"
+            android:text="提示" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/ga0a0a0"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/text_msg"
+            style="@style/text_m_com_style"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|left"
+            android:minHeight="68dp"
+            android:singleLine="false"
+            android:text="账号或密码输入有误，请重新输入"
+            android:textColor="@color/g333333" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_confirm"
+        style="@style/btn_com_style"
+        android:layout_margin="16dp"
+        android:text="确 定" />
+
+</LinearLayout>

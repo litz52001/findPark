@@ -1,14 +1,14 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" >
+    <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -17,4 +17,96 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 通用文字样式 -->
+    <style name="text_com_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/g000000</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 通用文字样式 中字体 -->
+    <style name="text_m_com_style" parent="text_com_style">
+        <item name="android:textSize">@dimen/m_textsize</item>
+    </style>
+
+    <!-- 通用文字样式 小字体 -->
+    <style name="text_s_com_style" parent="text_com_style">
+        <item name="android:textSize">@dimen/s_textsize</item>
+    </style>
+
+    <!-- 通用文字样式 大字体 -->
+    <style name="text_b_com_style" parent="text_com_style">
+        <item name="android:textSize">@dimen/b_textsize</item>
+    </style>
+
+    <!-- 通用按钮样式 -->
+    <style name="btn_com_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_com_height</item>
+        <item name="android:textSize">@dimen/m_textsize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_login_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 通用输入框样式 -->
+    <style name="edit_com_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_com_height</item>
+        <item name="android:textSize">@dimen/m_textsize</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/ga0a0a0</item>
+    </style>
+
+    <!-- 通用输入框样式 -->
+    <style name="edit_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/edit_line_selector</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/g000000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gc5c5c5</item>
+    </style>
+
+    <!-- 自定义键数字文字 -->
+    <style name="text_key_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/key_press_selector</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 线 -->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    
+    <!-- 白线 -->
+    <style name="line_white" parent="line">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 灰线 -->
+    <style name="line_gray" parent="line">
+        <item name="android:background">@color/gd9d9d9</item>
+    </style>
+    
 </resources>
