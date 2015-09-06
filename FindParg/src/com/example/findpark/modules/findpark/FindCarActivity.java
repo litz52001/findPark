@@ -11,7 +11,7 @@ import com.example.findpark.widget.wheel.DateTimeDialog;
 import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
 
 /**
- * 找车位
+ * 预约车位
  * @author Litz
  */
 

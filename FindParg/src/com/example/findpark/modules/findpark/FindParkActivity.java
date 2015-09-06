@@ -17,7 +17,7 @@ import com.example.findpark.modules.findpark.bean.ParkBean;
 import com.google.gson.reflect.TypeToken;
 
 /**
- * 找车位
+ * 找停车场
  * @author Litz
  */
 public class FindParkActivity extends BaseActivity {
@@ -34,6 +34,7 @@ public class FindParkActivity extends BaseActivity {
 
 	@Override
 	public void initView() {
+		setPageTitle("停车场");
 		parkLV = (ListView)findViewById(R.id.parkLV);
 		
 		

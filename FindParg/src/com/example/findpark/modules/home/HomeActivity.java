@@ -6,11 +6,13 @@ import android.view.View.OnClickListener;
 
 import com.example.findpark.R;
 import com.example.findpark.modules.BaseActivity;
+import com.example.findpark.modules.findpark.FindCarActivity;
 import com.example.findpark.modules.findpark.FindParkActivity;
+import com.example.findpark.modules.findpark.ReserveActivity;
 
 public class HomeActivity extends BaseActivity {
 
-	private View home_find_area,home_yuding_area,home_count_area,home_redeem_area;
+	private View home_find_area,home_yuding_area,home_pay_area,home_setting_area;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +24,8 @@ public class HomeActivity extends BaseActivity {
 	public void initView() {
 		home_find_area = findViewById(R.id.home_find_area);
 		home_yuding_area = findViewById(R.id.home_yuding_area);
-//		home_count_area = findViewById(R.id.home_count_area);
-//		home_redeem_area = findViewById(R.id.home_redeem_area);
+		home_pay_area = findViewById(R.id.home_pay_area);
+		home_setting_area = findViewById(R.id.home_setting_area);
 	}
 
 	@Override
@@ -45,24 +47,24 @@ public class HomeActivity extends BaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-				String data = dataManager.getData("findpark");
-				showToast(data);
+				goToAct(ReserveActivity.class, false);
 			}
 		});
-//		home_count_area.setOnClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-////				goToAct(CountMainActivity.class, false);
-//			}
-//		});
-//		home_redeem_area.setOnClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-////				goToAct(CouponActivity.class, false);
-//			}
-//		});
+		home_pay_area.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+//				goToAct(CountMainActivity.class, false);
+				
+			}
+		});
+		home_setting_area.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				showToast("开发中");
+			}
+		});
 		
 	}
 
