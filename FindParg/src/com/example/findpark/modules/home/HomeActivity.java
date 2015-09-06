@@ -6,10 +6,11 @@ import android.view.View.OnClickListener;
 
 import com.example.findpark.R;
 import com.example.findpark.modules.BaseActivity;
+import com.example.findpark.modules.findpark.FindParkActivity;
 
 public class HomeActivity extends BaseActivity {
 
-	private View home_cash_area,home_refund_area,home_count_area,home_redeem_area;
+	private View home_find_area,home_yuding_area,home_count_area,home_redeem_area;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,47 +20,49 @@ public class HomeActivity extends BaseActivity {
 
 	@Override
 	public void initView() {
-		home_cash_area = findViewById(R.id.home_cash_area);
-		home_refund_area = findViewById(R.id.home_refund_area);
-		home_count_area = findViewById(R.id.home_count_area);
-		home_redeem_area = findViewById(R.id.home_redeem_area);
+		home_find_area = findViewById(R.id.home_find_area);
+		home_yuding_area = findViewById(R.id.home_yuding_area);
+//		home_count_area = findViewById(R.id.home_count_area);
+//		home_redeem_area = findViewById(R.id.home_redeem_area);
 	}
 
 	@Override
 	public void initData() {
+		
 	}
 
 	@Override
 	public void initListener() {
-		home_cash_area.setOnClickListener(new OnClickListener() {
+		home_find_area.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-//				goToAct(CheckstandActivity.class, false);
+				goToAct(FindParkActivity.class, false);
 			}
 		});
 		
-		home_refund_area.setOnClickListener(new OnClickListener() {
+		home_yuding_area.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-//				goToAct(RefundActivity.class, false);
+				String data = dataManager.getData("findpark");
+				showToast(data);
 			}
 		});
-		home_count_area.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-//				goToAct(CountMainActivity.class, false);
-			}
-		});
-		home_redeem_area.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-//				goToAct(CouponActivity.class, false);
-			}
-		});
+//		home_count_area.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+////				goToAct(CountMainActivity.class, false);
+//			}
+//		});
+//		home_redeem_area.setOnClickListener(new OnClickListener() {
+//			
+//			@Override
+//			public void onClick(View v) {
+////				goToAct(CouponActivity.class, false);
+//			}
+//		});
 		
 	}
 

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor" >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar" />
+
+    <ImageView 
+        android:id="@+id/detail_img"
+        android:layout_width="fill_parent"
+        android:layout_height="145dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_below="@id/top_bar"
+        />
+    
+    <TextView 
+        android:id="@+id/detail_name"
+        style="@style/text_com_style"
+        android:layout_below="@id/detail_img"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:text="停车场名称"
+        />
+    
+    <RelativeLayout 
+        android:layout_below="@id/detail_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp"
+        >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="vertical"
+            >
+            
+            <TextView 
+                style="@style/text_s_com_style"
+                android:text="车位情况 300/200"
+                />
+            
+            <TextView 
+                style="@style/text_s_com_style"
+                android:text="价格  3元/时"
+                android:layout_marginTop="8dp"
+                />
+            <TextView 
+                style="@style/text_s_com_style"
+                android:text="开放时间   8:00 -- 10:00"
+                android:layout_marginTop="8dp"
+                />
+            
+            <TextView 
+                style="@style/text_s_com_style"
+                android:singleLine="false"
+                android:text="地址详情：地址详情地址详情地址详情地址详情地址详情"
+                android:layout_marginTop="8dp"
+                />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:orientation="horizontal"
+            >
+            <Button 
+                android:id="@+id/navigationBtn"
+                style="@style/btn_com_style"
+                android:layout_weight="1"
+                android:text="入口导航"
+                />
+            
+            <TextView 
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                />
+            
+            <Button 
+                android:id="@+id/reserveBtn"
+                style="@style/btn_com_style"
+                android:layout_weight="1"
+                android:text="立即预约"
+                />
+            
+            <TextView 
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                />
+            
+            <Button 
+                android:id="@+id/stopBtn"
+                style="@style/btn_com_style"
+                android:layout_weight="1"
+                android:text="立即停车"
+                />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

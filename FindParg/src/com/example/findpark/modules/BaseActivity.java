@@ -21,8 +21,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.findpark.R;
+import com.example.findpark.common.tool.DataManager;
 import com.example.findpark.widget.dialog.CommonProgressDialog;
 import com.example.findpark.widget.dialog.SingleDialog;
+import com.google.gson.Gson;
 
 /**
  * 基础activity类
@@ -47,6 +49,8 @@ public abstract class BaseActivity extends Activity {
 //	public LightPosDb db;
 	private CommonProgressDialog commonProgressDialog;
 	private SingleDialog sd;
+	public DataManager dataManager;
+	public Gson gson;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,9 @@ public abstract class BaseActivity extends Activity {
 //		netRequest.setMainContext(mContext);
 		commonProgressDialog = new CommonProgressDialog(mContext);
 		sd = new SingleDialog(mContext);
+		dataManager = new DataManager(this);
+		gson = new Gson();
+		
 //		db = LightPosDb.getInstance(mContext);
 		initTopBar();
 		initView();

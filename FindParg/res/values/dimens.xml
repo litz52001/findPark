@@ -4,6 +4,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     
+    <dimen name="item_margin">10dp</dimen>
+    
     <dimen name="row_com_height">48dp</dimen>
     <dimen name="order_row_height">46dp</dimen>
     <dimen name="count_row_height">48dp</dimen>
