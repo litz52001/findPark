@@ -63,7 +63,7 @@ public class FindParkAdapter extends BaseAdapter{
 		 viewHolder.park_name.setText(item.getName());
 		 viewHolder.park_location.setText(item.getLocation());
 //		 viewHolder.park_allPark.setText(item.get);
-		 viewHolder.park_surplus.setText(item.getSurplus());
+		 viewHolder.park_surplus.setText(item.getSurplus()+"/"+item.getAllPark());
 		 viewHolder.park_remark.setText(item.getRemark());
 		 
 		 viewHolder.park_imgUrl.setImageBitmap(new DataManager(mContext).getBltmap(item.getImgUrl()));

@@ -1,1 +1,5 @@
-[{"name":"停车场1","location":"256m","allPark":"300","surplus":"200","remark":"备注1","imgUrl":"park_img_1"},{"name":"停车场2","location":"256m","allPark":"302","surplus":"2002","remark":"备注2","imgUrl":"park_img_2"},{"name":"停车场3","location":"256m","allPark":"3003","surplus":"2003","remark":"备注3","imgUrl":"park_img_3"},{"name":"停车场4","location":"25m","allPark":"30","surplus":"20","remark":"备注4","imgUrl":"park_img_4"}]
+[{"name":"停车场1","location":"256m","allPark":"300","surplus":"200","remark":"免30分","imgUrl":"park_img_1","price":"3元/时","time":"8:00--22:00","addres":"中山路宏基客运站往南约400米武汉武昌火车站"},
+{"name":"停车场2","location":"100m","allPark":"400","surplus":"400","remark":"","imgUrl":"park_img_2","price":"6元/时","time":"7:00--22:00","addres":"武汉市武昌区校园东路武汉大学工学部(东北门)附近 "},
+{"name":"停车场3","location":"2.3km","allPark":"300","surplus":"200","remark":"免30分","imgUrl":"park_img_3","price":"5元/时","time":"8:00--23:00","addres":"光谷创业街创业街特1栋"},
+{"name":"停车场4","location":"910m","allPark":"200","surplus":"121","remark":"免15分","imgUrl":"park_img_4","price":"3元/时","time":"8:00--22:00","addres":"江岸区建设大道777-859号"}
+]

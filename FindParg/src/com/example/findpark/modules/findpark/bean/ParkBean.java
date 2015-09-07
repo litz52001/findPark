@@ -15,9 +15,14 @@ public class ParkBean implements Serializable{
 	public String surplus;//剩余车位
 	public String remark;//备注
 	public String imgUrl;//图片链接
+	public String price;//价格
+	public String time;//开放时间
+	public String addres;//地址
 	
+	 
 	public ParkBean(String name, String location, String allPark,
-			String surplus, String remark, String imgUrl) {
+			String surplus, String remark, String imgUrl, String price,
+			String time, String addres) {
 		super();
 		this.name = name;
 		this.location = location;
@@ -25,6 +30,27 @@ public class ParkBean implements Serializable{
 		this.surplus = surplus;
 		this.remark = remark;
 		this.imgUrl = imgUrl;
+		this.price = price;
+		this.time = time;
+		this.addres = addres;
+	}
+	public String getPrice() {
+		return price;
+	}
+	public void setPrice(String price) {
+		this.price = price;
+	}
+	public String getTime() {
+		return time;
+	}
+	public void setTime(String time) {
+		this.time = time;
+	}
+	public String getAddres() {
+		return addres;
+	}
+	public void setAddres(String addres) {
+		this.addres = addres;
 	}
 	public String getImgUrl() {
 		return imgUrl;

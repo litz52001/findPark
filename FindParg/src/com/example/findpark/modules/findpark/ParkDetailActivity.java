@@ -1,18 +1,25 @@
 package com.example.findpark.modules.findpark;
 
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.baidu.mapapi.navi.BaiduMapAppNotSupportNaviException;
 import com.baidu.mapapi.navi.BaiduMapNavigation;
 import com.baidu.mapapi.navi.NaviPara;
 import com.baidu.platform.comapi.basestruct.GeoPoint;
 import com.example.findpark.R;
+import com.example.findpark.common.tool.DataManager;
 import com.example.findpark.modules.BaseActivity;
 import com.example.findpark.modules.findpark.bean.ParkBean;
 
@@ -23,7 +30,8 @@ import com.example.findpark.modules.findpark.bean.ParkBean;
 public class ParkDetailActivity extends BaseActivity {
 
 	private Button navigationBtn,reserveBtn,stopBtn;
-
+	private ImageView detail_img;
+	private TextView detail_name,detail_num,detail_price,detail_time,detail_context;
 	private ParkBean parkBean;
 	
 	@Override
@@ -34,14 +42,28 @@ public class ParkDetailActivity extends BaseActivity {
 
 	@Override
 	public void initView() {
+		detail_img = (ImageView)findViewById(R.id.detail_img);
+		detail_name = (TextView)findViewById(R.id.detail_name);
+		detail_num = (TextView)findViewById(R.id.detail_num);
+		detail_price = (TextView)findViewById(R.id.detail_price);
+		detail_time = (TextView)findViewById(R.id.detail_time);
+		detail_context = (TextView)findViewById(R.id.detail_context);
 		
 		navigationBtn = (Button)findViewById(R.id.navigationBtn);
 		reserveBtn = (Button)findViewById(R.id.reserveBtn);
 		stopBtn = (Button)findViewById(R.id.stopBtn);
 	}
 
+	@SuppressLint("NewApi")
 	@Override
 	public void initData() {
+		parkBean = (ParkBean)getIntent().getSerializableExtra("parkBean");
+		detail_img.setBackground(new BitmapDrawable(new DataManager(mContext).getBltmap(parkBean.getImgUrl())));
+		detail_name.setText(parkBean.getName());
+		detail_num.setText("车位情况: "+parkBean.getSurplus()+"/"+parkBean.getAllPark());
+		detail_price.setText("价格: "+parkBean.getPrice() + "  "+parkBean.getRemark());
+		detail_time.setText("开放时间: "+parkBean.getTime());
+		detail_context.setText("地址详情: "+parkBean.getAddres());
 	}
 
 	@Override
@@ -55,7 +77,12 @@ public class ParkDetailActivity extends BaseActivity {
 		reserveBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				 goToAct(FindCarActivity.class, false);
+				
+				Intent intent = new Intent(mContext,FindCarActivity.class);
+				Bundle bundle = new Bundle();
+				bundle.putSerializable("parkBean", parkBean);
+				intent.putExtras(bundle);
+				startActivity(intent);
 			}
 		});
 		

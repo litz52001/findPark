@@ -4,6 +4,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,7 +45,7 @@ public class FindParkActivity extends BaseActivity {
 	public void initData() {
 		String data = dataManager.getData("findpark");
 		Type listType = new TypeToken<List<ParkBean>>(){}.getType(); 
-		List<ParkBean> parkList = gson.fromJson(data, listType);
+		parkList = gson.fromJson(data, listType);
 		
 		FindParkAdapter parkAdapter = new FindParkAdapter(this, parkList);
 		parkLV.setAdapter(parkAdapter);
@@ -59,7 +60,13 @@ public class FindParkActivity extends BaseActivity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
-				goToAct(ParkDetailActivity.class, false);
+				ParkBean parkBean = parkList.get(arg2);
+				
+				Intent intent = new Intent(mContext,ParkDetailActivity.class);
+				Bundle bundle = new Bundle();
+				bundle.putSerializable("parkBean", parkBean);
+				intent.putExtras(bundle);
+				startActivity(intent);
 			}
 		});
 		

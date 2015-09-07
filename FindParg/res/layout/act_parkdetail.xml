@@ -40,22 +40,26 @@
             >
             
             <TextView 
+                android:id="@+id/detail_num"
                 style="@style/text_s_com_style"
                 android:text="车位情况 300/200"
                 />
             
             <TextView 
+                android:id="@+id/detail_price"
                 style="@style/text_s_com_style"
                 android:text="价格  3元/时"
                 android:layout_marginTop="8dp"
                 />
             <TextView 
+                android:id="@+id/detail_time"
                 style="@style/text_s_com_style"
                 android:text="开放时间   8:00 -- 10:00"
                 android:layout_marginTop="8dp"
                 />
             
             <TextView 
+                android:id="@+id/detail_context"
                 style="@style/text_s_com_style"
                 android:singleLine="false"
                 android:text="地址详情：地址详情地址详情地址详情地址详情地址详情"

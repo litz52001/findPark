@@ -55,9 +55,11 @@
                 />
             <TextView 
                 android:id="@+id/park_remark"
-                android:text="30分钟"
+                android:text="30分"
                 style="@style/text_s_com_style"
                 android:layout_toRightOf="@id/park_num"
+                android:layout_alignBottom="@id/park_num"
+                android:textSize="14sp"
                 android:layout_marginLeft="20dp"
                 />
         </RelativeLayout>

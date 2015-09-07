@@ -7,8 +7,6 @@ import android.widget.ImageView;
 
 import com.example.findpark.R;
 import com.example.findpark.modules.BaseActivity;
-import com.example.findpark.widget.wheel.DateTimeDialog;
-import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
 
 /**
  * 停车位

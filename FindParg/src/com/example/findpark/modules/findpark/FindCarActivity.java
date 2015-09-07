@@ -6,7 +6,9 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 
 import com.example.findpark.R;
+import com.example.findpark.common.set.AppInit;
 import com.example.findpark.modules.BaseActivity;
+import com.example.findpark.modules.findpark.bean.ParkBean;
 import com.example.findpark.widget.wheel.DateTimeDialog;
 import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
 
@@ -18,6 +20,8 @@ import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
 public class FindCarActivity extends BaseActivity {
 
 	private ImageView img_findcar;
+	
+	private ParkBean parkBean;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +37,7 @@ public class FindCarActivity extends BaseActivity {
 
 	@Override
 	public void initData() {
-		
+		parkBean = (ParkBean)getIntent().getSerializableExtra("parkBean");
 	}
 
 	@Override
@@ -58,6 +62,7 @@ public class FindCarActivity extends BaseActivity {
 				showTipDialog("预约成功！ \n"+date,new OnClickListener(){
 					@Override
 					public void onClick(View v) {
+						AppInit.parkList.add(parkBean);
 						finish();
 					}
 				});
