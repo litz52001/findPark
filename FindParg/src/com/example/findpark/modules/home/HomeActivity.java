@@ -6,8 +6,8 @@ import android.view.View.OnClickListener;
 
 import com.example.findpark.R;
 import com.example.findpark.modules.BaseActivity;
-import com.example.findpark.modules.findpark.FindCarActivity;
 import com.example.findpark.modules.findpark.FindParkActivity;
+import com.example.findpark.modules.findpark.PayActivity;
 import com.example.findpark.modules.findpark.ReserveActivity;
 
 public class HomeActivity extends BaseActivity {
@@ -54,7 +54,7 @@ public class HomeActivity extends BaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-//				goToAct(CountMainActivity.class, false);
+				goToAct(PayActivity.class, false);
 				
 			}
 		});

@@ -8,4 +8,7 @@
     <string name="scanner_title">二维码扫描</string>
     <string name="scanner_text">将二维码放入框内，即可自动扫描</string>
     
+    <string name="checkstand_page_title">收银</string>
+    <string name="paysucces_page_title">支付完成</string>
+    
 </resources>

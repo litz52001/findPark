@@ -41,6 +41,11 @@ public class ReserveActivity extends BaseActivity {
 		FindParkAdapter parkAdapter = new FindParkAdapter(this, AppInit.parkList);
 		resvereLV.setAdapter(parkAdapter);
 		
+		if(AppInit.parkList.size() == 0)
+		{
+			showToast("未预约车位");
+		}
+		
 	}
 
 	@Override

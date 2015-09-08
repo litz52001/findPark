@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gededf7" >
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar" />
+
+    <TextView 
+        android:id="@+id/money_tv"
+        style="@style/text_b_com_style"
+        android:layout_centerHorizontal="true"
+        android:text="￥149.00"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="20dp"/>
+    
+    <TextView 
+        android:id="@+id/look_orderdetails_tv"
+        style="@style/text_m_com_style"
+        android:layout_centerHorizontal="true"
+        android:text="查看交易详情"
+        android:layout_below="@id/money_tv"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:textColor="#FD9A19"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_pay_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:layout_below="@id/money_tv"/>
+    
+    <Button 
+        android:id="@+id/btn_finish"
+        style="@style/btn_com_style"
+        android:text="完成"
+        android:background="@drawable/finishbtn_selector"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
