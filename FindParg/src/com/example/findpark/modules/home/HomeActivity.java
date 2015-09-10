@@ -14,7 +14,7 @@ import com.example.findpark.modules.reserve.ReserveActivity;
 
 public class HomeActivity extends BaseActivity {
 
-	private View home_find_area,home_yuding_area,home_pay_area,home_setting_area;
+	private View home_find_area,home_yuding_area,home_pay_area,home_setting_area,home_cash_area;
 	private TextView stop_time;
 	
 	@Override
@@ -25,6 +25,8 @@ public class HomeActivity extends BaseActivity {
 
 	@Override
 	public void initView() {
+		setPageTitle("停车demo");
+		home_cash_area = findViewById(R.id.home_cash_area);
 		home_find_area = findViewById(R.id.home_find_area);
 		home_yuding_area = findViewById(R.id.home_yuding_area);
 		home_pay_area = findViewById(R.id.home_pay_area);
@@ -71,8 +73,10 @@ public class HomeActivity extends BaseActivity {
 			
 			@Override
 			public void onClick(View v) {
-				goToAct(PayActivity.class, false);
-				
+				if(AppInit.isStop)
+					goToAct(PayActivity.class, false);
+				else
+					showToast("未停放车辆");
 			}
 		});
 		home_setting_area.setOnClickListener(new OnClickListener() {
@@ -82,7 +86,13 @@ public class HomeActivity extends BaseActivity {
 				showToast("开发中");
 			}
 		});
-		
+		home_cash_area.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				showToast("开发中");
+			}
+		});
 	}
 
 }

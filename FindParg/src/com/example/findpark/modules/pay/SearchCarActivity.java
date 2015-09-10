@@ -1,10 +1,6 @@
 package com.example.findpark.modules.pay;
 
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ImageView;
-
 import com.example.findpark.R;
 import com.example.findpark.modules.BaseActivity;
 
