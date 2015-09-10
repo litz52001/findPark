@@ -111,11 +111,15 @@
             android:background="@drawable/btn_home_refund_selector"
             android:clickable="true" >
 
-            <ImageView
+            <TextView
+                android:id="@+id/stop_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="24dp"  />
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:text="0时23分"
+                 />
 
             <TextView
                 style="@style/text_s_com_style"

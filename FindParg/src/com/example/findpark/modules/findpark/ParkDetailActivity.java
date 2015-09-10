@@ -67,24 +67,26 @@ public class ParkDetailActivity extends BaseActivity {
 
 	@Override
 	public void initListener() {
+		//导航
 		navigationBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				getNavigation();
 			}
 		});
+		//预约
 		reserveBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				
-				Intent intent = new Intent(mContext,FindCarActivity.class);
+				Intent intent = new Intent(mContext,ReserveCarActivity.class);
 				Bundle bundle = new Bundle();
 				bundle.putSerializable("parkBean", parkBean);
 				intent.putExtras(bundle);
 				startActivity(intent);
 			}
 		});
-		
+		//停车
 		stopBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

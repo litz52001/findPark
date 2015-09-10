@@ -38,7 +38,7 @@
         </activity>
         
         <activity
-            android:name="com.example.findpark.modules.findpark.FindCarActivity"
+            android:name="com.example.findpark.modules.findpark.ReserveCarActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
@@ -50,19 +50,25 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
         <activity
-            android:name="com.example.findpark.modules.findpark.ReserveActivity"
+            android:name="com.example.findpark.modules.reserve.ReserveActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
         <activity
-            android:name="com.example.findpark.modules.findpark.PayActivity"
+            android:name="com.example.findpark.modules.pay.PayActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
         <activity
-            android:name="com.example.findpark.modules.findpark.PaySuccess"
+            android:name="com.example.findpark.modules.pay.PaySuccess"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.findpark.modules.pay.SearchCarActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >

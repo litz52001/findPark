@@ -9,4 +9,7 @@ public class AppInit {
 
 	public static List<ParkBean> parkList = new ArrayList<ParkBean>();
 	
+	public static boolean isStop = false;
+	
+	
 }

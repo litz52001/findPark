@@ -1,4 +1,4 @@
-package com.example.findpark.modules.findpark;
+package com.example.findpark.modules.pay;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -60,6 +60,15 @@ public class PayActivity extends BaseActivity {
 
 	@Override
 	public void initData() {
+		
+		showRightText(R.string.findcar_right_title);
+		setRightListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				goToAct(SearchCarActivity.class, false);
+			}
+		});
+		
 		pcb.needMoney = "3.00";
 		
 		need_money_tv.setText("￥" + pcb.needMoney);

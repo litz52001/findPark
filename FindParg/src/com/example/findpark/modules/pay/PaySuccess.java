@@ -1,4 +1,4 @@
-package com.example.findpark.modules.findpark;
+package com.example.findpark.modules.pay;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.findpark.R;
+import com.example.findpark.common.set.AppInit;
 import com.example.findpark.common.tool.FU;
 import com.example.findpark.modules.BaseActivity;
 import com.example.findpark.modules.findpark.bean.PayCacheBean;
@@ -48,6 +49,7 @@ public class PaySuccess extends BaseActivity {
 
 			@Override
 			public void onClick(View v) {
+				AppInit.isStop = false;
 				finish();
 			}
 		});

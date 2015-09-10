@@ -8,6 +8,12 @@
         android:id="@+id/top_bar"
         layout="@layout/top_bar" />
 
+    <Button 
+        android:id="@+id/btn_search"
+        style="@style/btn_com_style"
+        android:text="完成"
+        android:background="@drawable/finishbtn_selector"
+        android:layout_alignParentBottom="true"/>
     
     <ImageView 
         android:id="@+id/img_findcar"
@@ -16,8 +22,7 @@
         android:contentDescription="@null"
         android:background="@drawable/findcar"
         android:layout_below="@id/top_bar"
+        android:layout_above="@id/btn_search"
         />
-    
-	 
-    
+
 </RelativeLayout>

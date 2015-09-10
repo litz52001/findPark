@@ -11,12 +11,12 @@
     <Button 
         android:id="@+id/btn_stop"
         style="@style/btn_com_style"
-        android:text="记录车位"
+        android:text="完成"
         android:background="@drawable/finishbtn_selector"
         android:layout_alignParentBottom="true"/>
     
     <ImageView 
-        android:id="@+id/img_findcar"
+        android:id="@+id/img_stopcar"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:contentDescription="@null"

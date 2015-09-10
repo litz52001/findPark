@@ -11,4 +11,6 @@
     <string name="checkstand_page_title">收银</string>
     <string name="paysucces_page_title">支付完成</string>
     
+    <string name="findcar_right_title">寻车</string>
+    
 </resources>

@@ -17,7 +17,7 @@ import com.example.findpark.widget.wheel.DateTimeDialog.OnChosenListener;
  * @author Litz
  */
 
-public class FindCarActivity extends BaseActivity {
+public class ReserveCarActivity extends BaseActivity {
 
 	private ImageView img_findcar;
 	
